@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-AWSS3Blog/Pods-AWSS3Blog-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework
+${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework
+${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework
