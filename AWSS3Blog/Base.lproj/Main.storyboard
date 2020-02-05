@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4la-VG-EMr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -10,88 +10,43 @@
         <!--AWSS3TransferManager-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AWSS3TransferManagerViewController" customModule="AWSS3Blog" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AWSS3Blog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Olr-rA-w8O">
-                                <rect key="frame" x="83" y="308.5" width="209" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="aBm-OQ-IZg"/>
-                                </constraints>
-                                <state key="normal" title="Upload file"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upload File via" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ss3-mT-Xnt">
+                                <rect key="frame" x="83" y="80" width="209" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Olr-rA-w8O">
+                                <rect key="frame" x="83" y="245" width="209" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Transfer Manager Method"/>
                                 <connections>
-                                    <action selector="uploadFileButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qH5-8g-r6a"/>
+                                    <action selector="transferManagerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dzo-Hl-XG0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsE-Pb-zOe">
+                                <rect key="frame" x="83" y="372" width="209" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Transfer Utility Method"/>
+                                <connections>
+                                    <action selector="transferUtilityButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i0C-UG-AC3"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Olr-rA-w8O" secondAttribute="trailing" constant="83" id="SGh-zy-xNf"/>
-                            <constraint firstItem="Olr-rA-w8O" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="SWF-8l-c1b"/>
-                            <constraint firstItem="Olr-rA-w8O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="eP1-A8-Beh"/>
-                            <constraint firstItem="Olr-rA-w8O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h0c-mk-FvC"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="AWSS3TransferManager" id="c06-OL-ujt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1039.2" y="-1.3493253373313345"/>
-        </scene>
-        <!--AWSS3TransferUtility-->
-        <scene sceneID="W9v-Gg-5jM">
-            <objects>
-                <viewController id="1dO-ur-EB3" customClass="AWSS3TransferUtilityViewController" customModule="AWSS3Blog" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8Ig-Y0-Xvk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omn-eI-2rq">
-                                <rect key="frame" x="83" y="308.5" width="209" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="m21-v9-q8q"/>
-                                </constraints>
-                                <state key="normal" title="Upload file"/>
-                                <connections>
-                                    <action selector="uploadFileButtonTapped:" destination="1dO-ur-EB3" eventType="touchUpInside" id="HbS-qD-HRz"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="drX-EF-NNj" firstAttribute="trailing" secondItem="omn-eI-2rq" secondAttribute="trailing" constant="83" id="0kS-0g-5zJ"/>
-                            <constraint firstItem="omn-eI-2rq" firstAttribute="centerY" secondItem="8Ig-Y0-Xvk" secondAttribute="centerY" id="FBQ-b3-TWs"/>
-                            <constraint firstItem="omn-eI-2rq" firstAttribute="centerX" secondItem="8Ig-Y0-Xvk" secondAttribute="centerX" id="bbB-ZS-cj9"/>
-                            <constraint firstItem="omn-eI-2rq" firstAttribute="leading" secondItem="drX-EF-NNj" secondAttribute="leading" constant="83" id="hkA-Bt-DW3"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="drX-EF-NNj"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="AWSS3TransferUtility" id="RcA-3X-4kB"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kzi-46-bET" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1039" y="706"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="jBS-qg-wDr">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="4la-VG-EMr" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OPK-wr-LB1">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Ufc-O2-9dj"/>
-                        <segue destination="1dO-ur-EB3" kind="relationship" relationship="viewControllers" id="NpQ-0y-FxU"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="df9-iI-XPT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="164" y="374"/>
+            <point key="canvasLocation" x="793" y="385"/>
         </scene>
     </scenes>
 </document>

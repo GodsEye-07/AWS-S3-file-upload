@@ -13,10 +13,9 @@
 		85D34E1D23E953D5009B1057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D34E1B23E953D5009B1057 /* Main.storyboard */; };
 		85D34E1F23E953D9009B1057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D34E1E23E953D9009B1057 /* Assets.xcassets */; };
 		85D34E2223E953D9009B1057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85D34E2023E953D9009B1057 /* LaunchScreen.storyboard */; };
-		85D34E2A23EA8AAC009B1057 /* AWSS3TransferUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D34E2923EA8AAC009B1057 /* AWSS3TransferUtility.swift */; };
 		85D34E2C23EA9869009B1057 /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 85D34E2B23EA9869009B1057 /* earth.png */; };
 		85D34E2E23EA9B5E009B1057 /* sample.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 85D34E2D23EA9B5E009B1057 /* sample.MOV */; };
-		85D34E3023EA9B8C009B1057 /* AWSS3TransferManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D34E2F23EA9B8C009B1057 /* AWSS3TransferManager.swift */; };
+		85D34E3223EABDC0009B1057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D34E3123EABDC0009B1057 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +28,9 @@
 		85D34E1E23E953D9009B1057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85D34E2123E953D9009B1057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85D34E2323E953D9009B1057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		85D34E2923EA8AAC009B1057 /* AWSS3TransferUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSS3TransferUtility.swift; sourceTree = "<group>"; };
 		85D34E2B23EA9869009B1057 /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
 		85D34E2D23EA9B5E009B1057 /* sample.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = sample.MOV; sourceTree = "<group>"; };
-		85D34E2F23EA9B8C009B1057 /* AWSS3TransferManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSS3TransferManager.swift; sourceTree = "<group>"; };
+		85D34E3123EABDC0009B1057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = /Users/ayushverma/Desktop/Dev/iOS/AWSS3Blog/AWSS3Blog/ViewController.swift; sourceTree = "<absolute>"; };
 		92F695CF335AA11A4B678C5F /* Pods-AWSS3Blog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSS3Blog.debug.xcconfig"; path = "Target Support Files/Pods-AWSS3Blog/Pods-AWSS3Blog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,9 +78,8 @@
 				85D34E2B23EA9869009B1057 /* earth.png */,
 				85D34E2D23EA9B5E009B1057 /* sample.MOV */,
 				85D34E1523E953D5009B1057 /* AppDelegate.swift */,
-				85D34E2F23EA9B8C009B1057 /* AWSS3TransferManager.swift */,
-				85D34E2923EA8AAC009B1057 /* AWSS3TransferUtility.swift */,
 				85D34E1723E953D5009B1057 /* SceneDelegate.swift */,
+				85D34E3123EABDC0009B1057 /* ViewController.swift */,
 				85D34E1B23E953D5009B1057 /* Main.storyboard */,
 				85D34E1E23E953D9009B1057 /* Assets.xcassets */,
 				85D34E2023E953D9009B1057 /* LaunchScreen.storyboard */,
@@ -217,10 +214,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85D34E3223EABDC0009B1057 /* ViewController.swift in Sources */,
 				85D34E1623E953D5009B1057 /* AppDelegate.swift in Sources */,
 				85D34E1823E953D5009B1057 /* SceneDelegate.swift in Sources */,
-				85D34E2A23EA8AAC009B1057 /* AWSS3TransferUtility.swift in Sources */,
-				85D34E3023EA9B8C009B1057 /* AWSS3TransferManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

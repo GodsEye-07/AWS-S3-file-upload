@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/ayushverma/Desktop/Dev/iOS/AWSS3Blog/AWSS3Blog/ViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:AWSS3Blog.xcodeproj">
    </FileRef>
    <FileRef
