@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AWSS3
+import AWSCognito
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -30,6 +32,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the user discards a scene session.
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+    
+    func initializeS3(){
+        let poolId = "ap-south-1:5d993a50-f970-42f4-930e-4ef306c729f0"
+        let credentialsProvider = AWSCognitoCredentialsProvider(
+            regionType: .APSouth1,
+            identityPoolId: poolId
+        )
+        let configuration = AWSServiceConfiguration(region: .APSouth1, credentialsProvider: credentialsProvider)
+        AWSServiceManager.default().defaultServiceConfiguration = configuration
     }
 
 
