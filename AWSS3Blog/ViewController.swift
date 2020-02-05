@@ -16,16 +16,16 @@ class ViewController: UIViewController {
     var completionHandler: AWSS3TransferUtilityUploadCompletionHandlerBlock?
     
     //AWSS3TransferManager
-    func AWSS3TransferManagerUploadFunction(with resource: String, type: String) {   //1
+    func AWSS3TransferManagerUploadFunction(with resource: String, type: String) { 
         let key = "\(resource).\(type)"
-        let localImagePath = Bundle.main.path(forResource: resource, ofType: type)!  //2
+        let localImagePath = Bundle.main.path(forResource: resource, ofType: type)!
         let localImageUrl = URL(fileURLWithPath: localImagePath)
         
         let request = AWSS3TransferManagerUploadRequest()!
-        request.bucket = bucketName  //3
-        request.key = key  //4
+        request.bucket = bucketName
+        request.key = key
         request.body = localImageUrl
-        request.acl = .publicReadWrite  //5
+        request.acl = .publicReadWrite
         
         //6
         let transferManager = AWSS3TransferManager.default()
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
             if let error = task.error {
                 print(error)
             }
-            if task.result != nil {   //7
+            if task.result != nil {
                 print("Uploaded \(key)")
                 //do any task
             }
@@ -41,7 +41,6 @@ class ViewController: UIViewController {
         }
         
     }
-    
     
     
     //AWSS3TransferUtility

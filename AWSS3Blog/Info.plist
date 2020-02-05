@@ -101,6 +101,8 @@
 	</array>
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleDarkContent</string>
+	<key>defaultServiceConfiguration</key>
+	<string>Uploading files to AWS</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -112,7 +114,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>defaultServiceConfiguration</key>
-	<string>upload</string>
 </dict>
 </plist>
